@@ -3,7 +3,7 @@
     $email = $_POST['email'];
     $text = $_POST['help'];
 
-	$to = "mail-nature@gmail.com"; 
+	$to = "mail.help.nature@gmail.com"; 
 	$date = date ("d.m.Y"); 
 	$time = date ("h:i");
 	$from = $email;
