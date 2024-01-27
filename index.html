@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/jquery.maskedinput.js">
+    <link rel="stylesheet" href="js/jquery.validate.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <title>Nature</title>
+</head>
+
+<body>
+    <header class="header">
+        <header class="header_main">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.svg" alt="logo" class="logo__img">
+                    </a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            
+                            <li class="menu__item">
+                                <p class="menu__text">По вопросам и предложениям</p>
+                                <a href="mailto:mail-nature@gmail.com" class="menu__link">mail-nature@gmail.com</a>
+                            </li>
+                            <li class="menu__item">
+                                <p class="menu__text">Для консультаций</p>
+                                <a href="tel:84954562421" class="menu__link">+7 (495) 456-24-21</a>
+                            </li>
+                            <div class="open-button">
+                                <button class="btn">
+                                    <img src="images/help.svg" alt="" class="help">
+                                </button>
+                            </div>
+                        </ul>
+                        
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <header class="header_close">
+            <div class="container">
+                <div class="header__inner-close">
+                    <a href="#" class="close__link">Помочь животным</a>
+                    <button class="btn-close">&#10006</button>
+                </div>
+            </div>
+        </header>       
+    </header>
+
+    <section class="popup_section">
+        <div class="container">
+            <div class="popup-bg">
+                <div class="popup">
+                    <button class="close-popup">&#10006</button>
+                    <form action="sender.php" method="POST">
+                        <p class="popup_title">Заполните анкету</p>
+                        <input type="text" name="name" placeholder="Ваше ФИО" required>
+                        <input type="email" name="email" placeholder="Ваша почта">
+                        <input type="text" name="help" placeholder="Чем вы можете помочь?">
+                        <input class="submit_button" type="button" value="Отправить">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="nature">
+        <div class="container">
+            <div class="animal__inner">
+                <div class="animal__column">
+                    <h1 class="nature__title">Защита природы</h1>
+                    <h2 class="nature__subtitle">Охрана животных</h2>
+                    <p class="nature__text">Человеческая деятельность негативно влияет на численность животных, приводя
+                        к их исчезновению.
+                        Для
+                        защиты редких видов животных была создана Красная книга, в которой перечислены животные,
+                        находящиеся
+                        под угрозой исчезновения. Для сохранения этих видов создаются природные комплексы, заповедники и
+                        национальные парки, где животные находятся под защитой и могут обитать в естественной среде.
+                        Зоопарки и питомники также играют важную роль в сохранении редких видов, предоставляя им особый
+                        уход
+                        и внимание.</p>
+                    <a href="#animal" class="animal__link">Другие животные и их описание</a>
+                </div>
+                <div class="animal__column animal__column-slider">
+                    <h4 class="animal__title">Животные из Красной книги</h4>
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img class="img_animal" src="images/musk_deer.jpg" alt="musk_deer">
+                                <p class="animal__text">Кабарга</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img_animal" src="images/snow_leopard.jpg" alt="snow_leopard">
+                                <p class="animal__text">Снежный барс</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img_animal" src="images/red_wolf.jpg" alt="red_wolf">
+                                <p class="animal__text">Красный волк</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img_animal" src="images/sea_lion.jpg" alt="sea_lion">
+                                <p class="animal__text">Сивуч</p>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="animal_conservation">
+        <div class="container">
+            <h3 class="conservation_title">Как помочь животным?</h3>
+                <div class="conservation_inner">
+                    <img src="images/dog.jpg" alt="dog" class="conservation_img">
+                    <div class="conservation_list">
+                        <div class="conservation_item">
+                            <h4 class="conservation_item-title">Волонтерство в приюте для животных</h4>
+                            <p class="conservation_item-text">Множество приютов нуждаются в помощи с уходом за
+                                животными, и волонтерство может быть отличным способом внести свой вклад. Вы можете
+                                помогать с кормлением, выгуливанием, уборкой вольеров и даже помощью в привитии
+                                животных.</p>
+                        </div>
+                        <div class="conservation_item">
+                            <h4 class="conservation_item-title">Поддержка организаций защиты животных</h4>
+                            <p class="conservation_item-text">Существует множество некоммерческих организаций, которые
+                                защищают права и благополучие животных. Вы можете пожертвовать деньги, время или ресурсы
+                                таким организациям, чтобы помочь им в их работе.</p>
+                        </div>
+                        <div class="conservation_item">
+                            <h4 class="conservation_item-title">Усыновление животного из приюта</h4>
+                            <p class="conservation_item-text">Если вы готовы обеспечить любящий дом и заботу,
+                                усыновление животного из приюта - замечательный способ помочь. Многие приюты имеют
+                                большое количество бездомных животных, которые ищут дом, и вы можете стать их
+                                спасителем.</p>
+                        </div>
+                        <div class="conservation_item">
+                            <h4 class="conservation_item-title">Образование и осведомленность</h4>
+                            <p class="conservation_item-text">Распространение информации о правильном обращении с
+                                животными и вопросах их защиты - это важный вклад в их благополучие. Вы можете размещать
+                                информацию в социальных сетях, участвовать в мероприятиях по осведомлению общественности
+                                или присоединиться к группам, которые борются за права животных.</p>
+                        </div>
+                        <div class="conservation_item">
+                            <h4 class="conservation_item-title">Соблюдение этического подхода к питанию</h4>
+                            <p class="conservation_item-text">Один из способов помочь животным - это пересмотреть свою
+                                диету и уменьшить потребление продуктов животного происхождения. Увеличение потребления
+                                растительных продуктов или переход на вегетарианство или веганство может способствовать
+                                снижению спроса на животных продукты, что в конечном итоге может уменьшить страдания
+                                животных в промышленном животноводстве.</p>
+                        </div>
+                        <div class="conservation_item">
+                            <h4 class="conservation_item-title">Создание доступных мест обитания</h4>
+                            <p class="conservation_item-text">Разрушение естественных сред жизни животных является одной
+                                из основных причин их исчезновения. Вы можете помочь, создавая доступные места обитания
+                                в своем саду или на приусадебном участке. Посадка местных растений, установка укрытий и
+                                прудов может стать приютом для различных видов животных.</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section class="animal_cards">
+        <div class="container">
+            <h3 class="cards_title" id="animal">Животные из Красной книги</h3>
+            <div class="cards_list">
+                <div class="cards_list-number first">
+                    <a href="#" id="link_sayt-first" class="cards_item">
+                        <img src="images/far_eastern_leopard.jpg" alt="" class="card_img">
+                        <p class="card_text">Леопард дальневосточный</p>
+                    </a>
+                    <a href="#" class="cards_item">
+                        <img src="images/mountain_sheep.jpg" alt="" class="card_img">
+                        <p class="card_text">Горный баран</p>
+                    </a>
+                    <a href="#" class="cards_item">
+                        <img src="images/manul.jpg" alt="" class="card_img">
+                        <p class="card_text">Манул</p>
+                    </a>
+                </div>
+                <div class="cards_list-number">
+                    <a href="#" id="link_sayt-second" class="cards_item">
+                        <img src="images/leatherback_turtle.png" alt="" class="card_img">
+                        <p class="card_text">Кожистая черепаха</p>
+                    </a>
+                    <a href="#" class="cards_item">
+                        <img src="images/brown_bear.png" alt="" class="card_img">
+                        <p class="card_text">Бурый медведь</p>
+                    </a>
+                    <a href="#" class="cards_item">
+                        <img src="images/bird_puffin.png" alt="" class="card_img">
+                        <p class="card_text">Птица тупик</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="natural_conditions">
+        <div class="container">
+            <h3 class="conditions_title">Что нужно сделать для создания доступных мест обитания для животных?</h3>
+            <div class="point_item">
+                <div class="point_title">
+                    <p class="point_number">1</p>
+                    <p class="point_subtitle">Изучение потребностей различных видов животных</p>
+                </div>
+                <p class="point_text">Первый шаг в создании доступных мест обитания для животных - изучение их
+                    потребностей.
+                    Разные виды животных имеют различные требования к своим местам обитания. Некоторым может
+                    понадобиться
+                    пространство для размножения или гнездования, другим - пища или просторные территории для
+                    передвижения.
+                    Исследуйте информацию о животных, которые проживают в вашем регионе, чтобы лучше понять их
+                    потребности.
+                </p>
+            </div>
+            <div class="point_item">
+                <div class="point_title">
+                    <p class="point_number">2</p>
+                    <p class="point_subtitle">Обновление и восстановление естественной растительности</p>
+                </div>
+                <p class="point_text">Одним из важных факторов, влияющих на доступность мест обитания для животных,
+                    является наличие естественной растительности. Растения предоставляют еду и укрытие для множества
+                    видов животных. Поэтому стоит рассматривать вопрос об обновлении и восстановлении растительности в
+                    нужных местах. При этом учитывайте местные условия и природные процессы, чтобы содействовать
+                    естественному разнообразию.
+                </p>
+            </div>
+            <div class="point_item">
+                <div class="point_title">
+                    <p class="point_number">3</p>
+                    <p class="point_subtitle">Создание водоемов</p>
+                </div>
+                <p class="point_text">Вода является жизненно важным ресурсом, и создание водоемов - отличный способ
+                    привлечь разнообразные виды животных. Это могут быть небольшие пруды, озера или лужайки, которые
+                    предоставят питьевую воду и места для размножения водным и наземным организмам.
+                </p>
+            </div>
+            <div class="point_item">
+                <div class="point_title">
+                    <p class="point_number">4</p>
+                    <p class="point_subtitle">Установка и размещение природных укрытий</p>
+                </div>
+                <p class="point_text">Укрытия являются ключевым элементом доступных мест обитания для животных.
+                    Различные виды животных предпочитают различные типы укрытий, такие как дупла в деревьях, кустарники,
+                    высокая трава и т.д. Установка и размещение природных укрытий способствует созданию безопасных мест
+                    для покоя, гнездования и защиты от хищников.
+                </p>
+            </div>
+            <div class="point_item">
+                <div class="point_title">
+                    <p class="point_number">5</p>
+                    <p class="point_subtitle">Зоналирование мест обитания</p>
+                </div>
+                <p class="point_text">Зоналирование мест обитания является важным инструментом управления и сохранения
+                    разнообразия видов. Оно позволяет создать специализированные зоны для различных видов и их
+                    потребностей. Например, можно создать зоны с высокой плотностью растительности для обеспечения
+                    укрытий, зоны с питательными растениями для привлечения определенных видов птиц или зоны с водными
+                    ресурсами для водных организмов.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="poachers">
+        <div class="container">
+            <h3 class="poachers_title">Главная проблема животных</h3>
+            <h4 class="poachers_subtitle">Браконьеры</h4>
+            <div class="poachers_list">
+                <div class="poachers_item plus">
+                    <button class="collapsible plus">
+                        <img src="images/plus.svg" alt="" class="plus-minus_img">
+                        <h3 class="plus-minus_title plus-title">Существует несколько способов борьбы с браконьерством:</h3>
+                        <h4 class="plus-minus_subtitle">1. Законодательство и правоохранительные органы</h4>
+                        <p class="poachers_text">Эффективное законодательство и строгое
+                            наказание для браконьеров являются важными инструментами борьбы с этим преступлением. Усиление
+                            правоохранительной деятельности, включая контроль, обыски и аресты, позволяет способствовать
+                            уменьшению браконьерства.</p>
+    
+                        <h4 class="plus-minus_subtitle">2. Охрана и патрулирование природных заповедников и национальных
+                            парков</h4>
+                        <p class="poachers_text">
+                            Укрепление охраны в природных заповедниках и национальных парках помогает предотвратить
+                            незаконную деятельность
+                            браконьеров. Это включает в себя создание и поддержание рейнджерских служб, проведение
+                            патрулирования и контроля за территорией, а также сотрудничество с местными сообществами для
+                            обеспечения информированности и вовлеченности.
+                        </p>
+                    </button>
+
+
+
+                    <div class="content plus">
+                        <h4 class="plus-minus_subtitle">3. Образование и информирование общественности</h4>
+                        <p class="poachers_text">
+                            Повышение осведомленности общественности о проблеме браконьерства и его последствиях является
+                            важным шагом в борьбе с этим преступлением.
+                            Проведение образовательных кампаний, мероприятий и мероприятий, а также распространение
+                            информации о значимости сохранения дикой природы и природного наследия, поможет сформировать
+                            позитивное отношение к сохранению животных и их среды обитания.
+                        </p>
+    
+                        <h4 class="plus-minus_subtitle">4. Международное сотрудничество</h4>
+                        <p class="poachers_text">
+                            Борьба с браконьерством - глобальная проблема, требующая
+                            координации и сотрудничества между различными странами. Обмен информацией, разработка
+                            международных договоров и специализированных программ помогают в эффективном реагировании на
+                            браконьерство и пресечении незаконной торговли дикими видами.
+                        </p>
+                        <div class="poachers_img-box">
+                            <img src="images/poachers_two.png" alt="" class="poachers_img">
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="poachers_item minus">
+                    <button class="collapsible minus">
+                        <img src="images/minus.svg" alt="" class="plus-minus_img">
+                        <h3 class="plus-minus_title minus-title">Браконьерство имеет множество отрицательных последствий и негативных
+                            влияний на окружающую среду и общество. Вот некоторые из них:</h3>
+                        <h4 class="plus-minus_subtitle">1. Угроза биоразнообразию</h4>
+                        <p class="poachers_text">Браконьерство подвергает опасности жизнь и выживание различных видов дикой
+                            природы. Убийство животных безразборно ведет к снижению популяции и даже исчезновению некоторых
+                            видов. Это негативно сказывается на экосистемах и приводит к потере биоразнообразия.</p>
+    
+                        <h4 class="plus-minus_subtitle">2. Нарушение природного равновесия</h4>
+                        <p class="poachers_text">
+                            Браконьерство может нарушить естественное равновесие в экосистеме. Убийство определенных видов
+                            животных может привести к увеличению популяции других видов, что может вызывать проблемы с
+                            пропагацией, питанием или даже заболеваниями.
+                        </p>
+                    </button>
+
+
+
+                    <div class="content minus">
+                        <h4 class="plus-minus_subtitle">3. Негативное влияние на экономику</h4>
+                        <p class="poachers_text">
+                            Браконьерство имеет отрицательные экономические последствия. Убийство и незаконная торговля
+                            дикими животными и растениями снижают стоимость природных ресурсов и подрывают долгосрочную
+                            устойчивость туристического и экологического сектора, который является источником дохода для
+                            многих сообществ.
+                        </p>
+    
+                        <h4 class="plus-minus_subtitle">4. Угроза здоровью человека</h4>
+                        <p class="poachers_text">
+                            Браконьеры могут использовать незаконные методы для ловли и убийства диких животных, такие как
+                            яды или запрещенное оружие. Это может представлять угрозу не только для самого браконьера, но и
+                            для окружающих людей. Также существует риск передачи инфекционных болезней от пораженных
+                            животных на людей.
+                        </p>
+                        <div class="poachers_img-box img-minus">
+                            <img src="images/poachers_one.png" alt="" class="poachers_img">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map_animal">
+        <div class="container">
+            <h3 class="map_title">Редкие животные России</h3>
+            <div class="map_content">
+                <img src="images/map.png" alt="" class="map">
+            </div>
+        </div>
+    </section>
+
+    <section class="animal_quiz">
+        <div class="container">
+            <h3 class="quiz_title">Тестовые вопросы</h3>
+            <div class="box">
+                <div class="quiz-box" id="quiz">
+                    <div class="quiz-header">
+                        <h2 class="question_text" id="question">Question text</h2>
+                        <ul class="question_ul">
+                            <li class="question_li">
+                                <input type="radio" name="answer" id="a" class="answer">
+                                <label for="a" id="a_text">Question</label>
+                            </li>
+                            <li class="question_li">
+                                <input type="radio" name="answer" id="b" class="answer">
+                                <label for="b" id="b_text">Question</label>
+                            </li>
+                            <li class="question_li">
+                                <input type="radio" name="answer" id="c" class="answer">
+                                <label for="c" id="c_text">Question</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="answer_button" id="submit">Ответить</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_inner">
+                <div class="footer_link-box">
+                    <a href="index.html" class="footer-link">
+                        <img src="images/logo.svg" alt="" class="footer_logo">
+                    </a>
+                </div>
+                <div class="footer_item one">
+                    <div class="footer_box_one">
+                        <a href="#" class="footer_text _popup">Помочь животным</a>
+                    </div>
+                    <div class="footer_box_two">
+                        <a href="#" class="footer_text">Файлы</a>
+                    </div>
+                </div>
+                <div class="footer_item">
+                    <div href="" class="item_link">
+                        <img src="images/img_phone.svg" alt="" class="link_img">
+                        <a href="tel:84954562421" class="item_text">+7 (495) 456-24-21</a>
+                    </div>
+                    <div href="" class="item_link">
+                        <img src="images/img_email.svg" alt="" class="link_img">
+                        <a href="mailto:mail-nature@gmail.com" class="item_text">mail-nature@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
