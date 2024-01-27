@@ -1,6 +1,6 @@
 jQuery(document).ready(function () {
      
-     $(".email").mask("mail-nature@gmail.com"); 
+     $(".email").mask("mail.help.nature@gmail.com"); 
     
    
     jQuery('.submit_button').click( function() {
