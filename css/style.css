@@ -1075,3 +1075,13 @@ input.answer, input.answer:hover{
         transform: scale(0.85);
     }
 }
+
+@media (max-width: 1005px) {
+    .menu {
+        padding-left: 260px;
+    }
+
+    .poachers_item {
+        max-width: 500px;
+    }
+}
