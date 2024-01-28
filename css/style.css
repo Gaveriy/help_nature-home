@@ -1109,6 +1109,11 @@ input.answer, input.answer:hover{
         margin-left: 10px;
     }
 
+    .conservation_item {
+        margin-right: 0;
+        padding-right: 0;
+    }
+
     .poachers_item {
         max-width: 500px;
     }
